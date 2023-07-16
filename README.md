@@ -1,2 +1,2 @@
 # skipjack-rust
-A harsh implementation of the Skipjack cipher
+A harsh implementation of the Skipjack block cipher in Rust. For details of the implementation, see this document: https://csrc.nist.gov/csrc/media/projects/cryptographic-algorithm-validation-program/documents/skipjack/skipjack.pdf
