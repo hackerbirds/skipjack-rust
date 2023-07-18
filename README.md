@@ -3,7 +3,7 @@ A harsh implementation of the Skipjack block cipher in Rust. For details of the 
 
 ## Why?
 
-For fun of course. We also wrote a little blog post about it: https://hackerbirds.neocities.org/skipjack
+For fun of course.
 
 ## How to run
 
