@@ -190,4 +190,17 @@ mod tests {
         let decrypted_block = decrypt(&key, encrypted_block);
         assert_eq!(block, decrypted_block);
     }
+
+    #[test]
+    fn encrypt_example_test() {
+        // generate a key, a random word (w), permutates it through G and inverts it.
+        let key: [u8; 10] = [0x00, 0x99, 0x88, 0x77, 0x66, 0x55, 0x44, 0x33, 0x22, 0x11];
+        let block: [u16; 4] = [0x3322, 0x1100, 0xddcc, 0xbbaa];
+        // &1 is the index of the key, it doesn't matter for testing G_perm.
+        let encrypted_block = encrypt(&key, block);
+        // expected ciphertext from the example given by the NIST
+        assert_eq!([0x2587, 0xcae2, 0x7a12, 0xd300], encrypted_block);
+        let decrypted_block = decrypt(&key, encrypted_block);
+        assert_eq!(block, decrypted_block);
+    }
 }
