@@ -7,4 +7,4 @@ For fun of course.
 
 ## How to run
 
-A `cargo run` in `src/` should do it.
+A `cargo run` should do it.
